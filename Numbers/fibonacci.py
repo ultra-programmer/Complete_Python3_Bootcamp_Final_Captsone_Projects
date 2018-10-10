@@ -15,8 +15,13 @@ def fib(limit):
 while True:
     try:
         FIB_LIMIT = int(input('Print all fibonacci numbers up to: '))
+        if FIB_LIMIT <= 0:
+            raise RuntimeError
     except ValueError:
         print('I\'m sorry! You must enter an integer! Please try again!\n')
+        continue
+    except RuntimeError:
+        print('I\'m sorry! The input must be greater than 0! Please try again!\n')
         continue
     else:
         break
