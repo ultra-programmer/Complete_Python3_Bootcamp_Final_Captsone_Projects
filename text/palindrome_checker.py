@@ -7,12 +7,12 @@ def check_palindrome(input_string):
     '''
     reversed_words = []
     if len(input_string.split()) == 1:
-        return input_string[::-1] == input_string
+        return input_string[::-1].lower() == input_string.lower()
     else:
         for word in input_string.split():
             reversed_words.append(word[::-1])
 
-        return ''.join(reversed_words[::-1]) == ''.join(input_string.split())
+        return ''.join(reversed_words[::-1]).lower() == ''.join(input_string.split()).lower()
 
 while True:
     try:
