@@ -38,5 +38,5 @@ def main():
             break
     print(f'It takes {collatz_conjecture(NUMBER)} steps to turn your number into 1 using the Collatz Conjecture!')
         
-if __name__() == '__main__()':
+if __name__ == '__main__':
     main()
