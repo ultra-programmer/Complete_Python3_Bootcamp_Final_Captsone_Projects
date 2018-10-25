@@ -9,7 +9,7 @@ def get_words(text):
     Turns an input string into a list of tuples (word, count)
     Removes punctuation and whitespace
     '''
-    return Counter(re.findall('[^.!?;:_ ]+', text)).items()
+    return Counter(re.findall('[^.,!?;:_ ]+', text)).items()
 
 def count_words(words):
     '''
