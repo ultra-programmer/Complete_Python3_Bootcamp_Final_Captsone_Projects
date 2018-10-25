@@ -1,0 +1,1 @@
+This file contains plenty of words for the word_count python script. I like to type words. This file has plenty of words.
