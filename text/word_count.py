@@ -19,16 +19,16 @@ def count_words(words):
 
 def main():
 	#Open the test file
-    with open('word_count.txt', 'r') as TEXT_FILE:
+    with open('word_count.txt', 'r') as text_file:
     	#Get the content of the test file
-        FILE_CONTENTS = TEXT_FILE.read()
+        file_contents = text_file.read()
 
         #Turn the file contents into a list of each word and the number of times it occurs
-        word_list = get_words(FILE_CONTENTS)
+        word_list = get_words(file_contents)
 
         #Find the number of words in the word list
-        NUM_WORDS = count_words(word_list)
-        print(f'There are {NUM_WORDS} words in your file!')
+        num_words = count_words(word_list)
+        print(f'There are {num_words} words in your file!')
 
         print('Here are the following occurences of each of the words in your file:')
         for word, count in word_list:
